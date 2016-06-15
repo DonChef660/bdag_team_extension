@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2015-01-22T16:08:40Z" product-name="bdag_team_extension">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="activity.description">
+				<source>activity</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="telephone.description">
+				<source>telephone</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="motto.description">
+				<source>motto</source>
+			</trans-unit>
+			<trans-unit id="employment_year.description">
+				<source>employmentYear</source>
+			</trans-unit>
+			<trans-unit id="facebook.description">
+				<source>facebook</source>
+			</trans-unit>
+			<trans-unit id="twitter.description">
+				<source>twitter</source>
+			</trans-unit>
+			<trans-unit id="xing.description">
+				<source>xing</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="hobby.description">
+				<source>hobby</source>
+			</trans-unit>
+			<trans-unit id="career.description">
+				<source>career</source>
+			</trans-unit>
+			<trans-unit id="category.description">
+				<source>category</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

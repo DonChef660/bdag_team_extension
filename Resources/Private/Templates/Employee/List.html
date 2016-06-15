@@ -1,0 +1,44 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+<div class="tx_bdagteamextension">
+	<f:flashMessages renderMode="div" />
+	
+	<div  class=" row"   >
+		<f:for each="{employees}" as="employee">
+			
+			<div class="col-md-4 col-sm-6  col-xs-12 grid <f:format.crop maxCharacters="3" append="">{employee.category.title}</f:format.crop>">
+					
+					<div class="employeeImageBox">
+						<f:link.action action="show" arguments="{employee : employee}">
+							<f:image src="{employee.image.originalResource.publicUrl}" width="768" />
+						</f:link.action>
+					</div>
+					
+					<div class="employeeDescBox">
+						<div class="employeeName">{employee.name}</div>
+						<!--<div class="categoryTitle">{employee.category.title}</div>-->
+						<div class="employeeActivity"><b>{employee.activity}</b></div>
+						<!--<div class="employeeMotto"><f:format.raw>{employee.motto}</f:format.raw></div>-->
+						
+						<div class="employeeMail"><f:link.email email="{employee.email}" /></div>
+						<div class="employeePhone">{employee.telephone}</div>
+						
+					</div>
+			</div>
+		</f:for>
+	</div>
+</div>
+</f:section>

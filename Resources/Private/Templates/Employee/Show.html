@@ -1,0 +1,88 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+<f:flashMessages renderMode="div" />
+
+<!-- <f:render partial="Employee/Properties" arguments="{employee:employee}" /> -->
+<div class="TE-show-wrapper ">
+	<h4>{employee.category.title}</h4>
+	<!-- ############ TOP ############ -->
+	<div class="TE-show-top col-md-12">
+		<f:image src="/typo3conf/ext/bdag_team_extension/Resources/Public/Icons/platzhalter-lounge.png" width="1090" />
+		<div class="TE-show-employeeName"><h1>{employee.name}</h1></div>
+	</div>
+	
+	
+	
+	<!-- ############ BOTTOM ############ -->
+	
+	<div class="TE-show-bottom col-md-12">
+		<!-- -->
+		
+		<div class="col-md-4 alpha">
+			
+      		<div class="TE-show-contact show-box">
+      			<h4>Visitenkarte</h4>
+				<div class="employeeMail"><p><f:link.email email="{employee.email}" /></p></div>
+				<div class="employeePhone"><p>Telefon: {employee.telephone}</p></div>
+				<div class="employeeDesc"><p>{employee.description}</p></div>
+				<div class="employeehobby"><p>{employee.hobby}</p></div>
+			</div>
+			
+			<!-- -->
+			
+			<div class="TE-show-hobby show-box">
+				
+				<f:image src="/typo3conf/ext/bdag_team_extension/Resources/Public/Icons/hobby.jpg" height="250" />
+			</div>
+			
+    	</div>
+    	
+    	<!-- -->
+    	
+    	<div class="col-md-4">
+    		
+    		<div class="TE-show-phrase show-box ">
+    			<h3>Über: {employee.name}</h3>
+				<f:format.raw>{employee.motto}</f:format.raw>
+			</div>
+			
+		</div>
+		
+		<!-- -->
+		
+		<div class="col-md-4 omega">
+			
+    		<div class="TE-show-wp show-box">
+				<f:image src="/typo3conf/ext/bdag_team_extension/Resources/Public/Icons/platzhalter-klein.jpg" height="250" />	
+			</div>	
+			
+			<!-- -->
+			
+			<div class="TE-show-wp-2 show-box ">
+				<f:image src="/typo3conf/ext/bdag_team_extension/Resources/Public/Icons/arbeitsplatz.jpg" height="250" />
+			</div>
+			
+		</div>
+		
+	</div>	
+	
+</div>
+
+
+<f:link.action action="list"><h4>Zurück zur Liste</h4></f:link.action><br />
+
+</f:section>

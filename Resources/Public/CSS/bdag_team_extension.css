@@ -1,0 +1,29 @@
+
+.employeeDescBox{background: url(/typo3conf/ext/bdag_team_extension/Resources/Public/Icons/typo3_werbeagentur_solothurn_mitarbeiter_pfeil_2.png) 
+no-repeat top center #e5e5e5; color: black;  margin-bottom:30px; padding: 10px 12px;padding-bottom:10px; position: relative;}
+.employeeImageBox{border-bottom:5.58mm solid #4f4f4f; }
+.employeeImageBox img{width: 100%; height:auto}
+.employeeName{text-align:center;padding-top:20px;font-size:20px;min-height:55px}
+.employeeActivity{text-align:center;color:#127bbb; font-size:20px;padding-top:9px;padding-bottom:8px;text-transform: uppercase;min-height:75px;line-height:24px}
+.employeeMotto{text-align:center;min-height:110px;}
+.employeePhone{text-align: center;font-size:17px;min-height:24px}
+.employeeMail{text-align:center;font-size:17px;min-height:24px}
+
+
+/* SHOW */
+.TE-show-bottom{margin:30px 10px 10px 10px;padding:0px !important}
+.TE-show-bottom h4{color:#127bbb}
+.TE-show-bottom .alpha{padding-left:0px}
+.TE-show-bottom .omega{padding-right:0px}
+
+.TE-show-contact{padding:15px;background:#e6e6e6;max-height:250px}
+.TE-show-contact p{font-size: 14px}
+
+.show-box{height:250px;margin:5px;text-align:center;border:1px solid #e5e5e5}
+.show-box img{width:100%;}
+
+.TE-show-phrase{padding:15px;background:#e6e6e6;min-height:505px}
+
+
+.TE-show-employeeName{position: absolute;top: 8px;left: 30px;}
+
